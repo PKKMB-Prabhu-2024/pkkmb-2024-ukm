@@ -5,27 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PKKMB</title>
     <link rel="stylesheet" href="output.css">
+    <script src="main.js"></script>
 </head>
-<body class="bg-[url('../images/BG.png')] h-screen font-PlayfairDisplay flex justify-center items-center">
-    <div class="h-fit w-fit ">
-        <div class="h-full w-full p-6 md:p-12">
-            <div class="w-fit relative right-[4vw] bg-biru text-white py-3 px-5 rounded mb-[10vh] shadow-inner">
-                <h1 class="text-2xl md:text-4xl font-bold tracking-wider">Unit Kegiatan Mahasiswa (UKM)</h1>
+<body class="bg-[url('../images/BG.png')] h-full w-screen font-PlayfairDisplay flex justify-start items-center relative overflow-hidden">
+    <div class="inline-block relative h-full w-full p-6 md:p-12 left-[16vw]">
+        <div class="w-fit relative right-[4vw] bg-biru text-white py-3 px-5 rounded mb-[10vh] shadow-inner">
+            <h1 class="text-2xl md:text-4xl font-bold tracking-wider">Unit Kegiatan Mahasiswa (UKM)</h1>
+        </div>
+        <div class="flex relative h-fit w-fit gap-[30vw]" id="contentContainer">
+            <div class="grid h-half w-half grid-cols-1 gap-7 md:grid-cols-6 md:grid-rows-4">
+                <div class="col-span-3 row-span-2 bg-merah text-white rounded relative p-6" id="ukm1">
+                    <h2 class="text-2xl font-bold mb-2">Marching Band Universitas Udayana</h2>
+                    <p class="collapse pr-28" id="p1">UKM Marching Band Universitas Udayana (MBU) merupakan salah satu UKM yang membidangi minat dan bakat mahasiswa di bidang musik khususnya marching band/drumband<br><br>Contact Person: 082147179023 (Adi)
+                    </p>
+                    <div class="bg-black w-32 h-32 rounded absolute bottom-0 right-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-kuning text-white rounded relative p-6 text-right" id="ukm2">
+                    <h2 class="text-xl font-bold mb-2">PPS Betako Merpati Putih Universitas Udayana</h2>
+                    <p class="collapse pl-28" id="p2">Merpati Putih (MP) merupakan salah satu perguruan pencak silat bela diri Tangan Kosong (PPS Betako) dan merupakan salah satu aset budaya bangsa, yang didirikan pada tanggal 8 Oktober 1987<br><br>Contact Person: 081359746507 (Fariz)
+                    </p>
+                    <div class="bg-black w-20 h-20 rounded absolute bottom-0 left-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-biru text-white rounded place-content-end relative p-6" id="ukm3">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 right-0"></div>
+                    <p class="collapse pr-28" id="p3">UKM URC merupakan UKM yang berfokus pada pengembangan diri dalam bidang pengetahuan, penelitian dan pengabdian yang multidisipliner untuk mengemansipasi mahasiswa<br><br>Contact Person: 085858658391 (Krispa)
+                    </p>
+                    <h2 class="text-xl font-bold mt-2">Udayana Research Club</h2>
+                </div>
+                <div class="col-span-3 row-span-2 bg-hijau text-white rounded place-content-end relative p-6 text-right" id="ukm4">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 left-0"></div>
+                    <p class="collapse pl-28" id="p4">UKM Weimana Udayana berdiri sejak 2012 yang menjadi wadah bagi para mahasiswa yang memiliki ketertarikan pada perancangan kendaraan listrik<br><br>Contact Person: 081558775562 (Arya)</p>
+                    <h2 class="text-xl font-bold mt-2">Weimana Udayana</h2>
+                </div>
             </div>
-            <div class="grid h-half w-half grid-cols-1 gap-7 md:grid-cols-2 md:grid-rows-2">
-                <div class="col-span-1 row-span-1 bg-merah text-white rounded flex justify-center items-center">Koperasi Mahasiswa Universitas Udayana</div>
-                <div class="col-span-1 row-span-1 bg-kuning text-white rounded flex justify-center items-center">UKM Wushu Universitas Udayana</div>
-                <div class="col-span-1 row-span-1 bg-biru text-white rounded flex justify-center items-center">UKM Kewirausahaan (UYEC)</div>
-                <div class="col-span-1 row-span-1 bg-hijau text-white rounded flex justify-center items-center">UKM Catur Universitas Udayana</div>
+            <div class="grid h-half w-half grid-cols-1 gap-7 md:grid-cols-6 md:grid-rows-4">
+                <div class="col-span-3 row-span-2 bg-merah text-white rounded relative p-6" id="ukm5">
+                    <h2 class="text-2xl font-bold mb-2">Koperasi Mahasiswa Universitas Udayana</h2>
+                    <p class="collapse pr-28" id="p5">UKM Koperasi bergerak layaknya koperasi pada umumnya, namun ruang lingkupnya khusus untuk mahasiswa<br><br>Contact Person: 085737598727 (Winarsa)</p>
+                    <div class="bg-black w-32 h-32 rounded absolute bottom-0 right-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-kuning text-white rounded relative p-6 text-right" id="ukm6">
+                    <h2 class="text-xl font-bold mb-2">UKM Wushu Universitas Udayana</h2>
+                    <p class="collapse pl-28" id="p6">UKM Wushu mengadakan latihan wushu pada hari selasa, kamis, dan sabtu, juga mengadakan latihan barongsai pada hari jumat. UKM kami sangat terbuka bagi pemula yang sama sekali tidak pernah mengikuti wushu sebelumnya<br><br>Contact Person:  082186582492 (Samuel)                            
+                    </p>
+                    <div class="bg-black w-20 h-20 rounded absolute bottom-0 left-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-biru text-white rounded place-content-end relative p-6" id="ukm7">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 right-0"></div>
+                    <p class="collapse pr-28" id="p7">UKM Catur Unud merupakan suatu unit kegiatan kemahasiswaan yang menjadi wadah pengembangan minat dan bakat mahasiswa Universitas Udayana di dalam bidang olahraga Catur<br><br>Contact Person:  088219296576 (Merta)</p>
+                    <h2 class="text-xl font-bold mt-2">UKM Catur Universitas Udayana</h2>
+                </div>
+                <div class="col-span-3 row-span-2 bg-hijau text-white rounded place-content-end relative p-6 text-right" id="ukm8">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 left-0"></div>
+                    <p class="collapse pl-28" id="p8">UKM Kewirausahaan merupakan UKM yang berfokus pada pelatihan dan pengembangan mental dan keterampilan di bidang kewirausahaan bagi mahasiswa Udayana<br><br>Contact Person: 082145661729 (Putri)</p>
+                    <h2 class="text-xl font-bold mt-2">UKM Kewirausahaan (UYEC)</h2>
+                </div>
             </div>
-            <div class="w-fit relative left-[60vw] mt-[6vh] space-x-4">
-                <button class="bg-kuning text-black rounded-full px-5 py-4 shadow-md shadow-slate-400">
-                    <img src="../images/arrow.png" alt="prev" class="rotate-180">
-                </button>
-                <button class="bg-kuning text-black rounded-full px-5 py-4 shadow-md shadow-slate-400">
-                    <img src="../images/arrow.png" alt="next">
-                </button>
+            <div class="grid h-half w-half grid-cols-1 gap-7 md:grid-cols-6 md:grid-rows-4">
+                <div class="col-span-3 row-span-2 bg-merah text-white rounded relative p-6" id="ukm9">
+                    <h2 class="text-2xl font-bold mb-2">UKM Taekwondo Udayana</h2>
+                    <p class="collapse pr-28" id="p9">UKM yang bergerak di bidang olahraga beladiri yaitu Taekwon- do. Taekwondo merupakan olahraga beladiri yang berasal dari Korea, dimana tekniknya berfokus pada tendangan<br><br>Contact Person:  082247130525 (Renanta)</p>
+                    <div class="bg-black w-32 h-32 rounded absolute bottom-0 right-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-kuning text-white rounded relative p-6 text-right" id="ukm10">
+                    <h2 class="text-xl font-bold mb-2">UKM Pramuka Racana Udayana</h2>
+                    <p class="collapse pl-28" id="p10">Pramuka Racana Udayana Mahendradatta adalah organisasi kepramukaan tingkat pandega di Universitas Udayana, memiliki dua kegiatan utama yaitu Gelar Apresiasi Pramuka Nusantara (GELAPATA) dan Gempita Aksi Anak Pramuka (TAKSAKA)<br><br>Contact Person:  085738925767 (Wahyu Rum)                            
+                    </p>
+                    <div class="bg-black w-20 h-20 rounded absolute bottom-0 left-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-biru text-white rounded place-content-end relative p-6" id="ukm11">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 right-0"></div>
+                    <p class="collapse pr-28" id="p11">UKM Perisai Diri dibentuk dan menjadi bagian dalam kegiatan Mahasiswa Universitas Udayana dimulai pada tanggal 30 April 1974, dengan moto "Pandai Silat Tanpa Cidera"<br><br>Contact Person: 085964277667 (Desak Tarisa)</p>
+                    <h2 class="text-xl font-bold mt-2">Perisai Diri</h2>
+                </div>
+                <div class="col-span-3 row-span-2 bg-hijau text-white rounded place-content-end relative p-6 text-right" id="ukm12">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 left-0"></div>
+                    <p class="collapse pl-28" id="p12">Unit Kegiatan Mahasiswa Bulutangkis Universitas Udayana adalah UKM yang bergerak di bidang olahraga sebagai wahana untuk menjadikan manusia yang sehat jasmani dan rohani<br><br>Contact Person:  082247402684 (Andiena)</p>
+                    <h2 class="text-xl font-bold mt-2">UKM Bulutangkis Universitas Udayana</h2>
+                </div>
             </div>
+            <div class="grid h-half w-half grid-cols-1 gap-7 md:grid-cols-6 md:grid-rows-4">
+                <div class="col-span-3 row-span-2 bg-merah text-white rounded relative p-6" id="ukm13">
+                    <h2 class="text-2xl font-bold mb-2">Mapala "Wanaprastha Dharma" Unud</h2>
+                    <p class="collapse pr-28" id="p13">Mahasiswa Pecinta Alam "Wanaprastha Dharma" Universitas Udayana merupakan organisasi pecinta alam pertama dan tertua di Provinsi Bali, yang bergerak di kegiatan alam bebas dan pelestarian lingkungan hidup<br><br>Contact Person: 089630571365 (Irfan)                            
+                    </p>
+                    <div class="bg-black w-32 h-32 rounded absolute bottom-0 right-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-kuning text-white rounded relative p-6 text-right" id="ukm14">
+                    <h2 class="text-xl font-bold mb-2">UKM KSR-PMI Universitas Udayana</h2>
+                    <p class="collapse pl-28" id="p14">UKM KSR-PMI Udayana merupakan organisasi mahasiswa yang berjalan di bidang kepalangmerahan yang berada di bawah naungan PMI Kabupaten Badung<br><br>Contact Person: 083119989927 (Pramita)                            
+                    </p>
+                    <div class="bg-black w-20 h-20 rounded absolute bottom-0 left-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-biru text-white rounded place-content-end relative p-6" id="ukm15">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 right-0"></div>
+                    <p class="collapse pr-28" id="p15">UKM Udayana Focus adalah organisasi mahasiswa di bidang media kreatif dengan 4 divisi: fotografi, videografi, produksi, dan animasi<br><br>Contact Person: 085852817405 (Max)</p>
+                    <h2 class="text-xl font-bold mt-2">UKM Udayana Focus</h2>
+                </div>
+                <div class="col-span-3 row-span-2 bg-hijau text-white rounded place-content-end relative p-6 text-right" id="ukm16">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 left-0"></div>
+                    <p class="collapse pl-28" id="p16">Menwa adalah sebuah organisasi mahasiswa di Indonesia yang memiliki fokus pada pembinaan kedisiplinan, kemandirian, kepemimpinan, dan ketangguhan fisik melalui kegiatan latihan dan pelatihan militer<br><br>Contact Person:  085241098356 (Nela)</p>
+                    <h2 class="text-xl font-bold mt-2">Resimen Mahasiswa (MENWA)</h2>
+                </div>
+            </div>
+            <div class="grid h-half w-half grid-cols-1 gap-7 md:grid-cols-6 md:grid-rows-4">
+                <div class="col-span-3 row-span-2 bg-merah text-white rounded relative p-6" id="ukm17">
+                    <h2 class="text-2xl font-bold mb-2">Udayana Debating Society</h2>
+                    <p class="collapse pr-28" id="p17">Udayana Debating Society merupakan rumah bagi mahasiswa Udayana yang ingin mengasah kemampuan berpikir kritis dan public speaking<br><br>Contact Person: 082147179447 (Christian)</p>
+                    <div class="bg-black w-32 h-32 rounded absolute bottom-0 right-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-kuning text-white rounded relative p-6 text-right" id="ukm18">
+                    <h2 class="text-xl font-bold mb-2">UKM Sepakbola dan Futsal</h2>
+                    <p class="collapse pl-28" id="p18">UKM Sepakbola dan Futsal merupakan wadah bagi mahasiswa/i UNUD untuk mengembangkan minat dan bakat dalam olahraga sepakbola maupun futsal dengan mengembangkan relasi dalam semangat keakraban<br><br>Contact Person:  081270518894 (Haikal)                            
+                    </p>
+                    <div class="bg-black w-20 h-20 rounded absolute bottom-0 left-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-biru text-white rounded place-content-end relative p-6" id="ukm19">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 right-0"></div>
+                    <p class="collapse pr-28" id="p19">Anggota yang tergabung dalam UKM JBU terdiri dari Jegeg dan Bagus masing-masing fakultas yang ada di Univ Udayana. Tujuannya yaitu membawa nama baik Univ Udayana dalam ajang Jegeg dan Bagus<br><br>Contact Person:  083114962863 (Cintia)</p>
+                    <h2 class="text-xl font-bold mt-2">Jegeg Bagus Udayana</h2>
+                </div>
+                <div class="col-span-3 row-span-2 bg-hijau text-white rounded place-content-end relative p-6 text-right" id="ukm20">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 left-0"></div>
+                    <p class="collapse pl-28" id="p20">Unit Kegiatan Mahasiswa Gateball merupakan salah satu UKM di Universitas Udayana yang bernaung di bidang olahraga gateball<br><br>Contact Person:  081338142057 (Gek Esa)</p>
+                    <h2 class="text-xl font-bold mt-2">UKM Gateball</h2>
+                </div>
+            </div>
+            <div class="grid h-half w-half grid-cols-1 gap-7 md:grid-cols-6 md:grid-rows-4">
+                <div class="col-span-3 row-span-2 bg-merah text-white rounded relative p-6" id="ukm21">
+                    <h2 class="text-2xl font-bold mb-2">UKM ROBOTEC</h2>
+                    <p class="collapse pr-28" id="p21">UKM ROBOTEC, Membidangi tentang robotika dan teknologi. Kami mengikuti ajang lomba PUSPRESNAS yaitu KRI(KONTES ROBOT INDONESIA)<br><br>Contact Person: 081236376615 (Ian)                            
+                    </p>
+                    <div class="bg-black w-32 h-32 rounded absolute bottom-0 right-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-kuning text-white rounded relative p-6 text-right" id="ukm22">
+                    <h2 class="text-xl font-bold mb-2">Persaudaraan Setia Hati Terate</h2>
+                    <p class="collapse pl-28" id="p22">Persaudaraan Setia Hati Terate merupakan salah satu organisasi pencak silat perintis kemerdekaan untuk membentuk manusia yang berbudi pekerti luhur, tahu benar dan salah, serta bertakwa kepada Tuhan yang Maha Esa<br><br>Contact Person: 089684731311 (Aradea Murti)</p>
+                    <div class="bg-black w-20 h-20 rounded absolute bottom-0 left-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-biru text-white rounded place-content-end relative p-6" id="ukm23">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 right-0"></div>
+                    <p class="collapse pr-28" id="p23">Pers Mahasiswa Akademika merupakan salah satu Unit Kegiatan Mahasiswa yang berfokus pada kegiatan jurnalistik, liputan internal di universitas maupun kegiatan eksternal<br><br>Contact Person: 081237213897 (Dayu)</p>
+                    <h2 class="text-xl font-bold mt-2">Pers Mahasiswa Akademika</h2>
+                </div>
+                <div class="col-span-3 row-span-2 bg-hijau text-white rounded place-content-end relative p-6 text-right" id="ukm24">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 left-0"></div>
+                    <p class="collapse pl-28" id="p24">Melalui UKM KKI Universitas Udayana, mahasiswa yang memiliki minat serta bakat di UKM ini akan ditempa, hingga menghasil- kan karateka yang berprestasi serta mengharumkan nama universitas, provinsi, maupun Negara Indonesia<br><br>Contact Person: 087861864118 (Sandy)</p>
+                    <h2 class="text-xl font-bold mt-2">UKM KKI Udayana</h2>
+                </div>
+            </div>
+            <div class="grid h-half w-half grid-cols-1 gap-7 md:grid-cols-6 md:grid-rows-4">
+                <div class="col-span-3 row-span-2 bg-merah text-white rounded relative p-6" id="ukm25">
+                    <h2 class="text-2xl font-bold mb-2">UKM Renang Universitas Udayana</h2>
+                    <p class="collapse pr-28" id="p25">UKM Renang adalah unit kegiatan mahasiswa yang berfokus pada olahraga renang untuk mengembangkan kemampuan renang mereka melalui latihan rutin dan partisipasi dalam kompetisi renang antar-kampus.<br><br>Contact Person: 085339418888 (Satria Andrew)
+                    </p>
+                    <div class="bg-black w-32 h-32 rounded absolute bottom-0 right-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-kuning text-white rounded relative p-6 text-right" id="ukm26">
+                    <h2 class="text-xl font-bold mb-2">UKM Kempo</h2>
+                    <p class="collapse pl-28" id="p26">UKM Kempo merupakan wadah bagi para mahasiswa Universitas Udayana untuk mengembangkan minat dan bakat mereka dalam bidang bela diri Shorinji Kempo.<br><br>Contact Person: 085847837749 (Cok Maha)</p>
+                    <div class="bg-black w-20 h-20 rounded absolute bottom-0 left-0"></div>
+                </div>
+                <div class="col-span-3 row-span-2 bg-biru text-white rounded place-content-end relative p-6" id="ukm27">
+                    <div class="bg-black w-20 h-20 rounded absolute top-0 right-0"></div>
+                    <p class="collapse pr-28" id="p27">UKM Teater Orok Noceng merupakan sebuah unit kegiatan mahasiswa yang berkecimpung di berbagai jenis pementasan seni teater khususnya pada pementasan drama realis.<br><br>Contact Person: 085936738224 (Wahyu)</p>
+                    <h2 class="text-xl font-bold mt-2">UKM TEATER OROK NOCENG</h2>
+                </div>
+            </div>
+        </div>
+        <div class="w-fit relative left-[60vw] mt-[6vh] space-x-4">
+            <button class="bg-kuning text-black rounded-full px-5 py-4 shadow-md shadow-slate-400 invisible md:visible" id="prev">
+                <img src="../images/arrow.png" alt="prev" class="rotate-180">
+            </button>
+            <button class="bg-kuning text-black rounded-full px-5 py-4 shadow-md shadow-slate-400 invisible md:visible" id="next">
+                <img src="../images/arrow.png" alt="next">
+            </button>
         </div>
     </div>
 </body>
