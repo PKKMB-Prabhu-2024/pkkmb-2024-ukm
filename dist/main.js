@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const next = document.getElementById("next");
     const contentContainer = document.getElementById("contentContainer");
     let currentPosition = 0;
-
     function moveRight() {
         if(currentPosition <= 450){
             currentPosition += 90; // Adjust the step size
@@ -70,329 +69,311 @@ document.addEventListener("DOMContentLoaded", function() {
             contentContainer.style.right = `${currentPosition}vw`;
         }
     }
+
+    function cursorIn(ukm1, ukm2, p, wa){
+        ukm1.style.width = "70%";
+        ukm2.style.width = "26%";
+        p.style.opacity = "1";
+        p.style.transitionDelay = "400ms";
+        p.style.transitionDuration = "500ms";
+        wa.style.opacity = "1";
+        wa.style.transitionDelay = "400ms";
+        wa.style.transitionDuration = "500ms";
+    }
+
+    function cursorOut(ukm1, ukm2, p, wa){
+        ukm1.style.width = "48%";
+        ukm2.style.width = "48%";
+        p.style.opacity = "0";
+        p.style.transitionDuration = "0ms";
+        p.style.transitionDelay = "0ms";
+        wa.style.opacity = "0";
+        wa.style.transitionDelay = "0ms";
+        wa.style.transitionDuration = "0ms";
+    }
+
     prev.addEventListener("click",moveLeft);
     next.addEventListener("click", moveRight);
 
-
-
     ukm1.addEventListener("mouseover", function() {
-        ukm1.style.gridColumn = "span 4 / span 4";
-        ukm2.style.gridColumn = "span 2 / span 2";
-        p1.style.visibility = "visible";
+        const wa = document.getElementById("waUkm1");
+        cursorIn(ukm1,ukm2, p1, wa);
     });
 
     ukm1.addEventListener("mouseout", function() {
-        ukm1.style.gridColumn = "span 3 / span 3";
-        ukm2.style.gridColumn = "span 3 / span 3";
-        p1.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm1");
+        cursorOut(ukm1,ukm2, p1, wa);
     });
 
     ukm2.addEventListener("mouseover", function() {
-        ukm2.style.gridColumn = "span 4 / span 4";
-        ukm1.style.gridColumn = "span 2 / span 2";
-        p2.style.visibility = "visible";
+        const wa = document.getElementById("waUkm2");
+        cursorIn(ukm2, ukm1, p2, wa);
     });
 
     ukm2.addEventListener("mouseout", function() {
-        ukm2.style.gridColumn = "span 3 / span 3";
-        ukm1.style.gridColumn = "span 3 / span 3";
-        p2.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm2");
+        cursorOut(ukm2, ukm1, p2, wa);
     });
 
     ukm3.addEventListener("mouseover", function() {
-        ukm3.style.gridColumn = "span 4 / span 4";
-        ukm4.style.gridColumn = "span 2 / span 2";
-        p3.style.visibility = "visible";
+        const wa = document.getElementById("waUkm3");
+       cursorIn(ukm3, ukm4, p3, wa);
     });
 
     ukm3.addEventListener("mouseout", function() {
-        ukm3.style.gridColumn = "span 3 / span 3";
-        ukm4.style.gridColumn = "span 3 / span 3";
-        p3.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm3");
+        cursorOut(ukm3, ukm4, p3, wa);
     });
 
     ukm4.addEventListener("mouseover", function() {
-        ukm4.style.gridColumn = "span 4 / span 4";
-        ukm3.style.gridColumn = "span 2 / span 2";
-        p4.style.visibility = "visible";
+        const wa = document.getElementById("waUkm4");
+        cursorIn(ukm4, ukm3, p4, wa);
     });
 
     ukm4.addEventListener("mouseout", function() {
-        ukm4.style.gridColumn = "span 3 / span 3";
-        ukm3.style.gridColumn = "span 3 / span 3";
-        p4.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm4");
+        cursorOut(ukm4, ukm3, p4, wa);
     });
 
     ukm5.addEventListener("mouseover", function() {
-        ukm5.style.gridColumn = "span 4 / span 4";
-        ukm6.style.gridColumn = "span 2 / span 2";
-        p5.style.visibility = "visible";
+        const wa = document.getElementById("waUkm5");
+        cursorIn(ukm5, ukm6, p5, wa);
     });
 
     ukm5.addEventListener("mouseout", function() {
-        ukm5.style.gridColumn = "span 3 / span 3";
-        ukm6.style.gridColumn = "span 3 / span 3";
-        p5.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm5");
+        cursorOut(ukm5, ukm6, p5, wa);
     });
 
     ukm6.addEventListener("mouseover", function() {
-        ukm6.style.gridColumn = "span 4 / span 4";
-        ukm5.style.gridColumn = "span 2 / span 2";
-        p6.style.visibility = "visible";
+        const wa = document.getElementById("waUkm6");
+        cursorIn(ukm6, ukm5, p6, wa);
     });
 
     ukm6.addEventListener("mouseout", function() {
-        ukm6.style.gridColumn = "span 3 / span 3";
-        ukm5.style.gridColumn = "span 3 / span 3";
-        p6.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm6");
+        cursorOut(ukm6, ukm5, p6, wa);
     });
 
     ukm7.addEventListener("mouseover", function() {
-        ukm7.style.gridColumn = "span 4 / span 4";
-        ukm8.style.gridColumn = "span 2 / span 2";
-        p7.style.visibility = "visible";
+        const wa = document.getElementById("waUkm7");
+        cursorIn(ukm7, ukm8, p7, wa);
     });
 
     ukm7.addEventListener("mouseout", function() {
-        ukm7.style.gridColumn = "span 3 / span 3";
-        ukm8.style.gridColumn = "span 3 / span 3";
-        p7.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm7");
+        cursorOut(ukm7, ukm8, p7, wa);
     });
 
     ukm8.addEventListener("mouseover", function() {
-        ukm8.style.gridColumn = "span 4 / span 4";
-        ukm7.style.gridColumn = "span 2 / span 2";
-        p8.style.visibility = "visible";
+        const wa = document.getElementById("waUkm8");
+        cursorIn(ukm8, ukm7 ,p8, wa);
     });
 
     ukm8.addEventListener("mouseout", function() {
-        ukm8.style.gridColumn = "span 3 / span 3";
-        ukm7.style.gridColumn = "span 3 / span 3";
-        p8.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm8");
+        cursorOut(ukm8, ukm7, p8, wa);
     });
 
     ukm9.addEventListener("mouseover", function() {
-        ukm9.style.gridColumn = "span 4 / span 4";
-        ukm10.style.gridColumn = "span 2 / span 2";
-        p9.style.visibility = "visible";
+        const wa = document.getElementById("waUkm9");
+        cursorIn(ukm9, ukm10, p9, wa);
     });
 
     ukm9.addEventListener("mouseout", function() {
-        ukm9.style.gridColumn = "span 3 / span 3";
-        ukm10.style.gridColumn = "span 3 / span 3";
-        p9.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm9");
+        cursorOut(ukm9, ukm10, p9, wa);
     });
 
     ukm10.addEventListener("mouseover", function() {
-        ukm10.style.gridColumn = "span 4 / span 4";
-        ukm9.style.gridColumn = "span 2 / span 2";
-        p10.style.visibility = "visible";
+        const wa = document.getElementById("waUkm10");
+        cursorIn(ukm10, ukm9, p10, wa);
     });
 
     ukm10.addEventListener("mouseout", function() {
-        ukm10.style.gridColumn = "span 3 / span 3";
-        ukm9.style.gridColumn = "span 3 / span 3";
-        p10.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm10");
+        cursorOut(ukm10, ukm9, p10, wa);
     });
 
     ukm11.addEventListener("mouseover", function() {
-        ukm11.style.gridColumn = "span 4 / span 4";
-        ukm12.style.gridColumn = "span 2 / span 2";
-        p11.style.visibility = "visible";
+        const wa = document.getElementById("waUkm11");
+        cursorIn(ukm11, ukm12, p11, wa);
     });
 
     ukm11.addEventListener("mouseout", function() {
-        ukm11.style.gridColumn = "span 3 / span 3";
-        ukm12.style.gridColumn = "span 3 / span 3";
-        p11.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm11");
+        cursorOut(ukm11, ukm12, p11, wa);
     });
 
     ukm12.addEventListener("mouseover", function() {
-        ukm12.style.gridColumn = "span 4 / span 4";
-        ukm11.style.gridColumn = "span 2 / span 2";
-        p12.style.visibility = "visible";
+        const wa = document.getElementById("waUkm12");
+        cursorIn(ukm12, ukm11, p12, wa);
     });
 
     ukm12.addEventListener("mouseout", function() {
-        ukm12.style.gridColumn = "span 3 / span 3";
-        ukm11.style.gridColumn = "span 3 / span 3";
-        p12.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm12");
+        cursorOut(ukm12, ukm11, p12, wa);
     });
 
     ukm13.addEventListener("mouseover", function() {
-        ukm13.style.gridColumn = "span 4 / span 4";
-        ukm14.style.gridColumn = "span 2 / span 2";
-        p13.style.visibility = "visible";
+        const wa = document.getElementById("waUkm13");
+        cursorIn(ukm13,ukm14, p13, wa);
     });
 
     ukm13.addEventListener("mouseout", function() {
-        ukm13.style.gridColumn = "span 3 / span 3";
-        ukm14.style.gridColumn = "span 3 / span 3";
-        p13.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm13");
+        cursorOut(ukm13,ukm14, p13, wa);
     });
 
     ukm14.addEventListener("mouseover", function() {
-        ukm14.style.gridColumn = "span 4 / span 4";
-        ukm13.style.gridColumn = "span 2 / span 2";
-        p14.style.visibility = "visible";
+        const wa = document.getElementById("waUkm14");
+        cursorIn(ukm14, ukm13, p14, wa);
     });
 
     ukm14.addEventListener("mouseout", function() {
-        ukm14.style.gridColumn = "span 3 / span 3";
-        ukm13.style.gridColumn = "span 3 / span 3";
-        p14.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm14");
+        cursorOut(ukm14, ukm13, p14, wa);
     });
 
     ukm15.addEventListener("mouseover", function() {
-        ukm15.style.gridColumn = "span 4 / span 4";
-        ukm16.style.gridColumn = "span 2 / span 2";
-        p15.style.visibility = "visible";
+        const wa = document.getElementById("waUkm15");
+       cursorIn(ukm15, ukm16, p15, wa);
     });
 
     ukm15.addEventListener("mouseout", function() {
-        ukm15.style.gridColumn = "span 3 / span 3";
-        ukm16.style.gridColumn = "span 3 / span 3";
-        p15.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm15");
+        cursorOut(ukm15, ukm16, p15, wa);
     });
 
     ukm16.addEventListener("mouseover", function() {
-        ukm16.style.gridColumn = "span 4 / span 4";
-        ukm15.style.gridColumn = "span 2 / span 2";
-        p16.style.visibility = "visible";
+        const wa = document.getElementById("waUkm16");
+        cursorIn(ukm16, ukm15, p16, wa);
     });
 
     ukm16.addEventListener("mouseout", function() {
-        ukm16.style.gridColumn = "span 3 / span 3";
-        ukm15.style.gridColumn = "span 3 / span 3";
-        p16.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm16");
+        cursorOut(ukm16, ukm15, p16, wa);
     });
+
     ukm17.addEventListener("mouseover", function() {
-        ukm17.style.gridColumn = "span 4 / span 4";
-        ukm18.style.gridColumn = "span 2 / span 2";
-        p17.style.visibility = "visible";
+        const wa = document.getElementById("waUkm17");
+        cursorIn(ukm17, ukm18, p17, wa);
     });
 
     ukm17.addEventListener("mouseout", function() {
-        ukm17.style.gridColumn = "span 3 / span 3";
-        ukm18.style.gridColumn = "span 3 / span 3";
-        p17.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm17");
+        cursorOut(ukm17, ukm18, p17, wa);
     });
 
     ukm18.addEventListener("mouseover", function() {
-        ukm18.style.gridColumn = "span 4 / span 4";
-        ukm17.style.gridColumn = "span 2 / span 2";
-        p18.style.visibility = "visible";
+        const wa = document.getElementById("waUkm18");
+        cursorIn(ukm18, ukm17, p18, wa);
     });
 
     ukm18.addEventListener("mouseout", function() {
-        ukm18.style.gridColumn = "span 3 / span 3";
-        ukm17.style.gridColumn = "span 3 / span 3";
-        p18.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm18");
+        cursorOut(ukm18, ukm17, p18, wa);
     });
 
     ukm19.addEventListener("mouseover", function() {
-        ukm19.style.gridColumn = "span 4 / span 4";
-        ukm20.style.gridColumn = "span 2 / span 2";
-        p19.style.visibility = "visible";
+        const wa = document.getElementById("waUkm19");
+        cursorIn(ukm19, ukm20, p19, wa);
     });
 
     ukm19.addEventListener("mouseout", function() {
-        ukm19.style.gridColumn = "span 3 / span 3";
-        ukm20.style.gridColumn = "span 3 / span 3";
-        p19.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm19");
+        cursorOut(ukm19, ukm20, p19, wa);
     });
 
     ukm20.addEventListener("mouseover", function() {
-        ukm20.style.gridColumn = "span 4 / span 4";
-        ukm19.style.gridColumn = "span 2 / span 2";
-        p20.style.visibility = "visible";
+        const wa = document.getElementById("waUkm20");
+        cursorIn(ukm20, ukm19 ,p20, wa);
     });
 
     ukm20.addEventListener("mouseout", function() {
-        ukm20.style.gridColumn = "span 3 / span 3";
-        ukm19.style.gridColumn = "span 3 / span 3";
-        p20.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm20");
+        cursorOut(ukm20, ukm19, p20, wa);
     });
 
     ukm21.addEventListener("mouseover", function() {
-        ukm21.style.gridColumn = "span 4 / span 4";
-        ukm22.style.gridColumn = "span 2 / span 2";
-        p21.style.visibility = "visible";
+        const wa = document.getElementById("waUkm21");
+        cursorIn(ukm21, ukm22, p21, wa);
     });
 
     ukm21.addEventListener("mouseout", function() {
-        ukm21.style.gridColumn = "span 3 / span 3";
-        ukm22.style.gridColumn = "span 3 / span 3";
-        p21.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm21");
+        cursorOut(ukm21, ukm22, p21, wa);
     });
 
     ukm22.addEventListener("mouseover", function() {
-        ukm22.style.gridColumn = "span 4 / span 4";
-        ukm21.style.gridColumn = "span 2 / span 2";
-        p22.style.visibility = "visible";
+        const wa = document.getElementById("waUkm22");
+        cursorIn(ukm22, ukm21, p22, wa);
     });
 
     ukm22.addEventListener("mouseout", function() {
-        ukm22.style.gridColumn = "span 3 / span 3";
-        ukm21.style.gridColumn = "span 3 / span 3";
-        p22.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm22");
+        cursorOut(ukm22, ukm21, p22, wa);
     });
 
     ukm23.addEventListener("mouseover", function() {
-        ukm23.style.gridColumn = "span 4 / span 4";
-        ukm24.style.gridColumn = "span 2 / span 2";
-        p23.style.visibility = "visible";
+        const wa = document.getElementById("waUkm23");
+        cursorIn(ukm23, ukm24, p23, wa);
     });
 
     ukm23.addEventListener("mouseout", function() {
-        ukm23.style.gridColumn = "span 3 / span 3";
-        ukm24.style.gridColumn = "span 3 / span 3";
-        p23.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm23");
+        cursorOut(ukm23, ukm24, p23, wa);
     });
 
     ukm24.addEventListener("mouseover", function() {
-        ukm24.style.gridColumn = "span 4 / span 4";
-        ukm23.style.gridColumn = "span 2 / span 2";
-        p24.style.visibility = "visible";
+        const wa = document.getElementById("waUkm24");
+        cursorIn(ukm24, ukm23, p24, wa);
     });
 
     ukm24.addEventListener("mouseout", function() {
-        ukm24.style.gridColumn = "span 3 / span 3";
-        ukm23.style.gridColumn = "span 3 / span 3";
-        p24.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm24");
+        cursorOut(ukm24, ukm23, p24, wa);
     });
 
     ukm25.addEventListener("mouseover", function() {
-        ukm25.style.gridColumn = "span 4 / span 4";
-        ukm26.style.gridColumn = "span 2 / span 2";
-        p25.style.visibility = "visible";
+        const wa = document.getElementById("waUkm25");
+        cursorIn(ukm25, ukm26, p25, wa);
     });
 
     ukm25.addEventListener("mouseout", function() {
-        ukm25.style.gridColumn = "span 3 / span 3";
-        ukm26.style.gridColumn = "span 3 / span 3";
-        p25.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm25");
+        cursorOut(ukm25, ukm26, p25, wa);
     });
 
     ukm26.addEventListener("mouseover", function() {
-        ukm26.style.gridColumn = "span 4 / span 4";
-        ukm25.style.gridColumn = "span 2 / span 2";
-        p26.style.visibility = "visible";
+        const wa = document.getElementById("waUkm26");
+        cursorIn(ukm26, ukm25, p26, wa);
     });
 
     ukm26.addEventListener("mouseout", function() {
-        ukm26.style.gridColumn = "span 3 / span 3";
-        ukm25.style.gridColumn = "span 3 / span 3";
-        p26.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm26");
+        cursorOut(ukm26, ukm25, p26, wa);
     });
 
     ukm27.addEventListener("mouseover", function() {
-        ukm27.style.gridColumn = "span 4 / span 4";
-        p27.style.visibility = "visible";
+        const wa = document.getElementById("waUkm27");
+        ukm27.style.width = "70%";
+        p27.style.opacity = "1";
+        p27.style.transitionDelay = "400ms";
+        p27.style.transitionDuration = "500ms";
+        wa.style.opacity = "1";
+        wa.style.transitionDelay = "400ms";
+        wa.style.transitionDuration = "500ms";
     });
 
     ukm27.addEventListener("mouseout", function() {
-        ukm27.style.gridColumn = "span 3 / span 3";
-        p27.style.visibility = "hidden";
+        const wa = document.getElementById("waUkm27");
+        ukm27.style.width = "48%";
+        p27.style.opacity = "0";
+        p27.style.transitionDuration = "0ms";
+        p27.style.transitionDelay = "0ms";
+        wa.style.opacity = "0";
+        wa.style.transitionDelay = "0ms";
+        wa.style.transitionDuration = "0ms";
     });
 });
